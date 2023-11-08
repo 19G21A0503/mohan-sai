@@ -39,7 +39,7 @@ class OpenStudent(Student):
         return self.__overallMarks__ / 6
 
 
-stu = RegularStudent("MOHAN", "SAI", 432, "Viswam, KBHP Colony, Hyderabad, Telangana")
+stu = RegularStudent("MOHAN", "SAI", 90, "Viswam, KBHP Colony, Hyderabad, Telangana")
 name = stu.getFullName()
 print(name)
 stu.setAddress("KBHP Colony, Hyderabad, Telangana")
