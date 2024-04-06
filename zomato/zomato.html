@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zomato Online Food Delivery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="zomato.css">
+    <script>
+        function searchFunction(event) {
+            event.preventDefault();
+            const searchTerm = document.getElementById('search').value;
+            console.log('Search term:', searchTerm);
+        }
+    </script>
+  </head>
+
+    <body>
+        <div class="zom-body">
+            <div class="navbar-section">
+                <nav class="navbar navbar-expand-lg bg-transparent">
+                    <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png" class="nav-logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav nav-underline ancher">
+                        <li class="nav-item">
+                            <a class="nav-link item-nav" href="#">Add Restaurent</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link item-nav" href="#">Sign In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link item-nav" href="#">Sign Up</a>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="body-section d-flex flex-column justify-content-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="box">
+                            <form onsubmit="searchFunction(event)">
+                                <div class="search-container">
+                                    <input type="text" id="search" name="q" placeholder="Search Here...">
+                                    <button type="submit">Search</button>
+                                </div>
+                            </form>  
+                            <div class="box-bottom col-12 ">
+                                <h2>Find the best <span style="color: yellow;">restaurants</span>, <span style="color: yellow;">cafes</span> and <span style="color: yellow;">bars</span> in India..!</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="second-section">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="https://b.zmtcdn.com/data/dish_photos/cff/380755a020b731b2632d2cb922e88cff.jpg" height="100%" nwidth="100%"/>
+                            <div class="card-botton">
+                                <p class="h4 m-2 mt-2 text-center">Biriyani.!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="https://b.zmtcdn.com/data/dish_photos/ec5/e0642a64f67b953f65161d224c82cec5.jpg" height="100%" nwidth="100%"/>
+                            <div class="card-botton">
+                                <p class="h4 m-2 mt-2 text-center">Pizza</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="https://b.zmtcdn.com/data/dish_photos/b89/c43a695402d78b80eb4272dca709bb89.jpg" height="100%" nwidth="100%"/>
+                            <div class="card-botton">
+                                <p class="h4 m-2 mt-2 text-center">Burger</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="https://b.zmtcdn.com/data/dish_photos/a1d/e267f87010688f526e2d3924796a3a1d.jpg" height="100%" nwidth="100%"/>
+                            <div class="card-botton">
+                                <p class="h4 m-2 mt-2 text-center">Fried Rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="https://b.zmtcdn.com/data/pictures/1/91611/77491fc2838c565e8e82263006d60307.jpg" height="100%" nwidth="100%"/>
+                            <div class="card-botton">
+                                <p class="h4 m-2 mt-2 text-center">Thali</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="https://b.zmtcdn.com/data/dish_photos/ca0/5ce74d61a4c62fa5439000a3a814bca0.jpg" height="85%" nwidth="100%"/>
+                            <div class="card-botton">
+                                <p class="h4 m-2 mt-2 text-center">Chicken</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="https://b.zmtcdn.com/data/dish_photos/307/73d04f2aa344c89242f238aa646c5307.jpg" height="100%" nwidth="100%"/>
+                            <div class="card-botton">
+                                <p class="h4 m-2 mt-2 text-center">Cakes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="https://b.zmtcdn.com/data/pictures/9/97709/535f506f0b3bcbd0b3e9585c9a5a005b.jpg" height="100%" nwidth="100%"/>
+                            <div class="card-botton">
+                                <p class="h4 m-2 mt-2 text-center">Sweets</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="popular-locations">
+            <div class="container">
+                <div class="d-flex justify-content-center">
+                    <h1 class="popular-heading">Popular locations in 
+                        <img src="https://www.pngall.com/wp-content/uploads/2016/05/India-Flag-PNG-Clipart.png" class="india"><b> India</b></h1>
+                </div>
+            </div>
+            <div class="content justify-content-center">
+                <h5 class="content-p1 justify-content-center">From swanky upscale restaurants to the cosiest hidden gems serving the most incredible food,</h5>
+                <h5 class="content-p2 justify-content-center">Zomato covers it all. Explore menus, and millions of restaurant photos and reviews</h5>
+                <h5 class="content-p3 justify-content-center">from users just like you, to find your next great meal.</h5>
+            </div>
+            <div class="sec-4">
+                <div class="box-2">
+                    <div><span> Hyderabad </span><i class="fa fa-arrow-right"></i></div>
+                </div>
+                <div class="box-2">
+                    <div><span> Benguluru </span><i class="fa fa-arrow-right"></i></div>
+                </div>
+                <div class="box-2">
+                    <div><span> Chennai </span><i class="fa fa-arrow-right"></i></div>
+                </div>
+                <div class="box-2">
+                    <div><span> Andhra Pradesh </span><i class="fa fa-arrow-right"></i></div>
+                </div>
+                <div class="box-2">
+                    <div><span> Nellore </span><i class="fa fa-arrow-right"></i></div>
+                </div>
+                <div class="box-2">
+                    <div><span> Tirupathi </span><i class="fa fa-arrow-right"></i></div>
+                </div>
+                <div class="box-2">
+                    <div><span> Kadapa </span><i class="fa fa-arrow-right"></i></div>
+                </div>
+                <div class="box-2">
+                    <div><span> Visakapatnam </span><i class="fa fa-arrow-right"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="sec-5">
+            <div class="flex content">
+                <img src="https://www.goteso.com/products/assets/images/clone-scripts/zomato/customer.png" alt="">
+                <div class="address">
+                    <h2>Get The Zomato App</h2>
+                    <p>We Will Send You A Lik, Open It On Your Phone To Download The App</p>
+                    <div class="flex radio">
+                        <div>
+                            <input type="radio" name="fill" id="email" checked>
+                            <label for="email">Email</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="fill" id="Phone">
+                            <label for="Phone">Phone</label>
+                        </div>
+                    </div>
+                    <div class="flex email">
+                        <input class="input" type="text">
+                        <label for="" class="place">Email</label>
+                        <button>Share App Link</button>
+                    </div>
+                    <p class="download">Download The App From</p>
+                    <img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" style="width: 220px; height: 10vh;" alt="">
+                    <img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" style="width: 220px; height: 10vh;" class="ams" alt="">
+                </div>
+            </div>
+        </div>
+
+        <section class="end">
+            <div class="sec-6">
+                <h1>Explore Other Option For You Here</h1>
+                <h4>Popular Cuisines Near Me</h4>
+                <div>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                </div>
+            </div>
+            <div class="sec-6">
+                <h4>Popular Restaurent Types Near Me</h4>
+                <div>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                    <a href="#">Bakery Food Near Me</a>
+                    <i class="fa fa-circle"></i>
+                </div>
+            </div>
+            <div class="sec-6">
+                <h4>Top Restaurent Chains</h4>
+                <div class="end-column">
+                    <a href="#">Chicken Biriyani</a>
+                    <a href="#">Bakery Food Near Me</a>
+                    <a href="#">Chicken Biriyani</a>
+                    <a href="#">Bakery Food Near Me</a>
+                    <a href="#">Chicken Biriyani</a>
+                    <a href="#">Bakery Food Near Me</a>
+                    <a href="#">Chicken Biriyani</a>
+                    <a href="#">Bakery Food Near Me</a>
+                    <a href="#">Chicken Biriyani</a>
+                    <a href="#">Bakery Food Near Me</a>
+                    <a href="#">Chicken Biriyani</a>
+                    <a href="#">Bakery Food Near Me</a>
+                    <a href="#">Chicken Biriyani</a>
+                    <a href="#">Bakery Food Near Me</a>
+                    <a href="#">Chicken Biriyani</a>
+                    <a href="#">Bakery Food Near Me</a>
+                    <a href="#">Chicken Biriyani</a>
+                    <a href="#">Bakery Food Near Me</a>
+                    <a href="#">Chicken Biriyani</a>
+                    <a href="#">Bakery Food Near Me</a>
+                    <a href="#">Chicken Biriyani</a>
+                    <a href="#">Bakery Food Near Me</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="sec-7">
+                <div class="first">
+                    <div>
+                        <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*" alt="">
+                    </div>
+                    <div class="first-1">
+                        <div>
+                            <span>India</span>
+                        </div>
+                        <div>
+                            <span>English</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="second">
+                    <div>
+                        <h4>ABOUT ZOMATO</h4>
+                        <a href="#">Who WE Are</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Work With Us</a>
+                        <a href="#">Invester Relation</a>
+                        <a href="#">Press Kit</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                    <div>
+                        <h4>ZOMAVERSE</h4>
+                        <a href="#">Zomato</a>
+                        <a href="#">Blinkit</a>
+                        <a href="#">Feeding India</a>
+                        <a href="#">HyperPure</a>
+                        <a href="#">Zomoland</a>
+                    </div>
+                    <div>
+                        <h4>FOR RESTAURANTS</h4>
+                        <a href="#">Partner With Us</a>
+                        <a href="#">Apps For You</a>
+                    </div>
+                    <div>
+                        <h4>FOR ENTERPRISES</h4>
+                        <a href="#">Zomato For Enterprise</a>
+                    </div>
+                    <div>
+                        <h4>LEARN MORE</h4>
+                        <a href="#">Privacy</a>
+                        <a href="#">Security</a>
+                        <a href="#">Terms</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                    <div class="box-4">
+                        <h2>Social Links</h2>
+                        <div>
+                            <i class="fa fa-linkedin"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-youtube"></i>
+                            <i class="fa fa-facebook"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </scrip>
+    </body>
+</html>
